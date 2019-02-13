@@ -5,6 +5,7 @@
     <p><%= flat.description %></p>
     <p><%= flat.price_per_night %></p>
     <p><%= flat.number_of_guest %></p>
+    <%= link_to "Delete", flat_path(flat), method: :delete, data: {confirm: "Are you sure?"} %>
   <% end %>
 <% end %>
 
