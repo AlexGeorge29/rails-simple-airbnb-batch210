@@ -4,3 +4,6 @@
   <p><%= @flat.price_per_night %></p>
   <p><%= @flat.number_of_guest %></p>
 
+<%= link_to "index", flats_path %>
+
+<%= render 'edit', flat: @flat %>
