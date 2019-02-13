@@ -1,7 +1,9 @@
 <% @flats.each do |flat| %>
-  <p><strong><%= flat.name %></p></strong>
-  <p><%= flat.address %></p>
-  <p><%= flat.description %></p>
-  <p><%= flat.price_per_night %></p>
-  <p><%= flat.number_of_guest %></p>
+  <%= link_to flat_path(flat) do %>
+    <p><strong><%= flat.name %></p></strong>
+    <p><%= flat.address %></p>
+    <p><%= flat.description %></p>
+    <p><%= flat.price_per_night %></p>
+    <p><%= flat.number_of_guest %></p>
+  <% end %>
 <% end %>
